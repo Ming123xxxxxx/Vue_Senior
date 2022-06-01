@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    
+    <!--设置ico-->
+    <link rel="shortcut icon" href="<%= BASE_URL %>favicon.ico"/>
+
+    <!--引入bootstrap-->
+    <link rel="stylesheet" href="<%= BASE_URL %>css/bootstrap.css"/>
+    <!--配置网页标题-->
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body>
+
+<!--当浏览器不支持js时，noscript中的元素就会被渲染-->
+ <noscript>
+     <strong>We Are Sorry but <%= htmlWebpackPlugin.options.title %> xxx</strong>
+ </noscript>   
+
+<!--准备一个容器-->
+<div id="root">
+</div>
+
+<div id="app">
+</div>
+
+
+</body>
+</html>
